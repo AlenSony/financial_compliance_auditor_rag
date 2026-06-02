@@ -1,0 +1,24 @@
+# --- Python Virtual Environments ---
+venv/
+env/
+.venv/
+
+# --- Local Vector Databases (Chroma Binary Indexes) ---
+audit_db/
+.chroma/
+
+# --- Temporary Input Documents ---
+# We keep the directory structure but ignore individual uploaded PDFs
+target_documents/*.pdf
+!target_documents/.gitkeep
+
+# --- Runtime Cache & OS Scrap ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db
+
+# --- Package Dependency Outputs ---
+requirements.txt
